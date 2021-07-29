@@ -8,7 +8,11 @@ const app = new Vue({
             'Completare todoList',
             'Aggiungere componente estetica',
             'Inserire progetto nel portfolio se valido'
-        ]
+        ],
     },
-    methods: {}
+    methods: {
+        deleteTask(i) {
+            this.tasks.splice(i, 1);
+        },
+    }
 });
