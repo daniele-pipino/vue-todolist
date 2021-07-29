@@ -3,6 +3,12 @@ Vue.config.devtools = true;
 
 const app = new Vue({
     el: '#root',
-    data: {},
+    data: {
+        tasks: [
+            'Completare todoList',
+            'Aggiungere componente estetica',
+            'Inserire progetto nel portfolio se valido'
+        ]
+    },
     methods: {}
 });
