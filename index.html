@@ -36,7 +36,7 @@
                     <div v-else class="list-group w-50 mx-auto">
                         <ul class="list-group ">
                             <li class="list-group-item d-flex justify-content-between" v-for="(task, index) in tasks">
-                                {{task}}<button @click="deleteTask(index)" type=" button" class="btn-close"
+                                {{task}}<button @click="deleteTask(index)" type=" button" class="btn-close bg-danger"
                                     aria-label="Close"></button>
                             </li>
                         </ul>
