@@ -19,7 +19,16 @@
         </header>
         <main class="container mx-auto">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
+                    <!-- add new task -->
+                    <div class="input-group mb-3 w-50 mx-auto">
+                        <input v-model="newTask" type="text" class="form-control" placeholder="Add new task"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button @click="addTask()" class="btn btn-outline-primary" type="button">Add</button>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <!-- task list -->
                     <div class="list-group w-50 mx-auto">
                         <ul class="list-group ">
                             <li class="list-group-item d-flex justify-content-between" v-for="(task, index) in tasks">
